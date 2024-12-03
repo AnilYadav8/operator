@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>Addition</title>
+    </head>
+    <body>
+        <h2>Calculator</h2>
+        Input A : <input type="number" id="num1"><br><br>
+        Input B : <input type="number" id="num2"><br><br>
+        <!-- <button onclick="calsum()">click me</button> -->
+        <button onclick="calsum()">sum</button>
+        <button onclick="calsub()">sub</button>
+        <button onclick="calpro()">pro</button>
+        <button onclick="caldiv()">div</button>
+        <script>
+            function calsum(){
+                //This is used of parseInt
+                const a = parseInt(document.getElementById("num1").value);
+                const b = parseInt(document.getElementById("num2").value);
+                //This is sum
+                const sum = a+b;
+                alert("This sum is:" +sum);
+            }
+                function calsub(){
+                //This is used of parseInt
+                const a = parseInt(document.getElementById("num1").value);
+                const b = parseInt(document.getElementById("num2").value);
+                 //This is sub
+                 const sub = a-b;
+                alert("This sub is:" +sub);
+            }
+                function calpro(){
+                //This is used of parseInt
+                const a = parseInt(document.getElementById("num1").value);
+                const b = parseInt(document.getElementById("num2").value);
+
+                 //This is pro
+                 const pro = a*b;
+                alert("This pro is:" +pro);
+            }
+                function caldiv(){
+                //This is used of parseInt
+                const a = parseInt(document.getElementById("num1").value);
+                const b = parseInt(document.getElementById("num2").value);
+
+                 //This is sum
+                 const div = a/b;
+                alert("This div is:" +div);
+            }
+                
+                if(a+b){
+                    const sum = a+b;
+                }
+                else if(a-b){
+                    const sub = a-b;
+                }
+                else if(a*b){
+                    const pro =a*b;
+                }
+                else if(a/b){
+                    const div=a/b;
+                }
+                
+            
+        </script>
+        </body>
+        </html>
